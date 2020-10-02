@@ -1,0 +1,317 @@
+body {
+    margin: 0%;
+}
+
+.Header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+.Myself {
+    background: none;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 36px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.Logo {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.Name {
+    font-family: Calibri;
+    font-size: 1.8em;
+    color: white;
+    margin-left: 53px;
+    margin-top: 8px;
+}
+
+.Menu {
+    width: 620px;
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 320px);
+}
+
+.Menu button {
+    font-family: Calibri;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    background: none;
+    margin-left: 30px;
+    display: inline-block;
+    border-style: none;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.Menu button::after {
+    content: "";
+    background: white;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-left: 50%;
+    transition-duration: 300ms;
+}
+
+.Menu button:hover::after {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.Social {
+    width: 260px;
+    position: absolute;
+    right: 0px;
+    top: 23px;
+}
+
+.Social a {
+    position: relative;
+    margin-left: 49px;
+}
+
+.Social img {
+    position: absolute;
+}
+
+.Cover {
+    position: absolute;
+    opacity: 0;
+    transition-duration: 300ms;
+}
+
+.Cover:hover {
+    opacity: 1;
+}
+
+.Controller {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 20%;
+    top: calc(50% - 50px);
+}
+
+.Selected {
+    width: 100%;
+    height: 16px;
+    position: relative;
+}
+
+.Selected::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: tan;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    transition-duration: 300ms;
+}
+
+.Unselected {
+    width: 100%;
+    height: 16px;
+    position: relative;
+}
+
+.Unselected::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 45px;
+    top: 7px;
+    transition-duration: 300ms;
+}
+
+.Unselected:hover::after {
+    left: 15px;
+    width: 80px;
+    background: tan;
+}
+
+.Background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.Animator {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.Animator img {
+    width: 100%;
+    position: absolute;
+}
+
+.Animator div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.Content {
+    width: 50%;
+    height: calc(100% - 70px);
+    position: fixed;
+    top: 70px;
+}
+
+.Paragraph {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
+.Paragraph h1 {
+    font-family: Calibri light;
+    font-size: 3em;
+    color: tan;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.Paragraph p {
+    font-family: Calibri;
+    font-size: 1.5em;
+    color: white;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.Paragraph form {
+    width: 80%;
+    margin-left: 15%;
+    background: none;
+}
+
+.Field {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Field input {
+    font-family: Calibri;
+    font-size: 1.5em;
+    color: white;
+    width: calc(100% - 155px);
+    background: none;
+    border-style: none;
+    border-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-bottom-color: white;
+}
+
+.Field p {
+    font-family: Calibri;
+    font-size: 1.5em;
+    color: white;
+    width: 120px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+.Submit {
+    font-family: Calibri;
+    font-size: 1.6em;
+    color: white;
+    width: calc(100% - 155px);
+    height: 50px;
+    background: none;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    transition-duration: 300ms;
+}
+
+.Submit:hover {
+    color: tan;
+    background: white;
+}
+
+.Footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: calc(100% - 60px);
+}
+
+.Contact {
+    width: 125px;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.Contact button {
+    font-family: Calibri;
+    font-size: 2em;
+    color: white;
+    background: none;
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.Contact button::after {
+    content: "";
+    background: white;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-left: 50%;
+    transition-duration: 300ms;
+}
+
+.Contact button:hover::after {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.Curtain {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    transition-duration: 1s;
+}
+
+.Curtain img {
+    margin: auto;
+    position: absolute;
+    left: calc(50% - 96px);
+    top: calc(50% - 96px);
+    transition-duration: 300ms;
+}
